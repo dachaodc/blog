@@ -2,7 +2,6 @@
 
 #### 第一步，观察正方形的border，发现四个边是由梯形组成的
 
-![image-20200814172402669](/Users/zhaoyingchao/Library/Application Support/typora-user-images/image-20200814172402669.png)
 
 ```html
 .shape {
@@ -20,10 +19,6 @@
 
 
 ### 第二步，隐藏掉三个边框，剩余一个就是想要的效果了
-
-
-
-![image-20200814172700349](/Users/zhaoyingchao/Library/Application Support/typora-user-images/image-20200814172700349.png)
 
 
 
