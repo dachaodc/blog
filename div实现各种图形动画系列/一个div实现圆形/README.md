@@ -1,6 +1,6 @@
 ## 圆形
 
-### 只需要border-radio 50%就可以
+### 只需要border-radio 50%就可以(宽高的一半)
 
  .shape {
             width: 80px;
