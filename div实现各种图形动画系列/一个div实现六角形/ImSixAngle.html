@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>实现六角形</title>
+    <meta charset="UTF-8">
+    <style>
+        .shape {
+            width: 0;
+            height: 0;
+            margin: 66px auto;
+            border-top: 30px solid transparent;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 30px solid red;
+        }
+
+        .shape::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 30px solid red;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            margin: 126px auto;
+            position: absolute;
+            top: -20px;
+            left: calc(50% - 30px);
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="shape"></div>
+</body>
+</html>

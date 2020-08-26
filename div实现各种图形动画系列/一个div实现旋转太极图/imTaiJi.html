@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>旋转太极图</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tai-ji {
+            width: 0;
+            height: 400px;
+            margin: 50px auto;
+            position: relative;
+            border-left: 200px solid #000;
+            border-right: 200px solid #fff;
+            box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+            border-radius: 400px;
+            animation: myTaiJiAni 5s linear infinite;
+            -webkit-animation: myTaiJiAni 5s linear infinite;
+            -moz-animation: myTaiJiAni 5s linear infinite;
+            -o-animation: myTaiJiAni 5s linear infinite;
+        }
+
+        .tai-ji::before,
+        .tai-ji::after {
+            position: absolute;
+            content: "";
+            border-radius: 50%;
+        }
+
+        .tai-ji::before {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            left: -100px;
+            box-shadow: 0 200px 0 black;
+        }
+
+        .tai-ji::after {
+            width: 60px;
+            height: 60px;
+            top: 60px;
+            left: -30px;
+            background-color: #000;
+            box-shadow: 0 200px 0 #fff;
+        }
+
+        @keyframes myTaiJiAni {
+            100% {
+                transform: rotate(-360deg)
+            }
+        }
+
+        @-webkit-keyframes myTaiJiAni {
+            100% {
+                transform: rotate(-360deg)
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="tai-ji"></div>
+</body>
+</html>
