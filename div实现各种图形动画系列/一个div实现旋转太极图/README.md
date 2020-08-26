@@ -38,7 +38,7 @@
         }
 ```
 
-<img src="/Users/zhaoyingchao/Library/Application Support/typora-user-images/image-20200826103459206.png" alt="image-20200826103459206" style="zoom:33%;" />
+<img src="./image-20200826103459206.png" alt="image-20200826103459206" style="zoom:33%;" />
 
 #### 发现还缺少一个黑色的圆，该怎么实现呢，想到了CSS3的box-shadow,利用box-shadow来实现，只需要调整box-shadow的位置就可以了
 
@@ -59,7 +59,7 @@
 }
 ```
 
-<img src="/Users/zhaoyingchao/Library/Application Support/typora-user-images/image-20200826103834548.png" alt="image-20200826103834548" style="zoom:33%;" />
+<img src="./image-20200826103834548.png" alt="image-20200826103834548" style="zoom:33%;" />
 
 #### 第三步，利用同样的原理，使用::after把两个小圆也添加进来
 
@@ -74,7 +74,7 @@
 }
 ```
 
-<img src="/Users/zhaoyingchao/Library/Application Support/typora-user-images/image-20200826104031425.png" alt="image-20200826104031425" style="zoom:33%;" />
+<img src="./image-20200826104031425.png" alt="image-20200826104031425" style="zoom:33%;" />
 
 #### 第四步，加上旋转动画，利用animation @keyframes
 
